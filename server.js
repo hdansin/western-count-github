@@ -25,6 +25,7 @@ app.get("/api/hello", function (req, res) {
 });
 
 app.get("/api/whoami", function (req, res) {
+  let ip = curl  -H "Accept: application/json" ipinfo.io/json;
   res.json({"ipaddress" : ""})
 })
 
